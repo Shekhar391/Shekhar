@@ -1,0 +1,126 @@
+// swapping to arrays value using third variable
+#include <stdio.h>
+
+int main() {
+    int a[5]={1,2,3,4,5},b[5]={10,20,30,40,50},c[5];
+    for (int i=0;i<5;i++)
+    { // printf("a,%d b,%d",a[i],b[i]);
+       
+        c[5]=a[i];
+        a[i]=b[i];
+        b[i]=c[5];
+        printf("\na %d\t ",a[i]);
+        printf(" b %d\t",b[i]);
+    }
+    return 0;
+}
+
+********************************
+// sum of an array
+#include<stdio.h>
+void main(){
+int b[5]={10,20,30,40,50,},c;
+
+for (int i=0;i<5;i++)
+    { 
+           printf(" %d ",b[i]);
+             c+=b[i];
+          
+    }
+       printf("\n%d ",c);
+}
+//multiply of an array
+#include<stdio.h>
+void main(){
+int b[5]={10,20,30,40,50,},c=1;
+
+for (int i=0;i<5;i++)
+    { 
+           printf(" %d ",b[i]);
+             c+=b[i];
+          
+    }
+       printf("\n%d ",c);
+}
+*************************************
+// square of an array
+#include <stdio.h>
+int main()
+{
+    int a[5];
+    int i,j;
+    for(i=0;i<5;i++)
+    {
+            printf("enter value=");
+            scanf("%d",&a[i]);
+           j= a[i]*a[i];
+            printf("%d\n",j);
+    }  
+}
+******************************************
+// cube of an array
+#include <stdio.h>
+int main()
+{
+    int a[5];
+    int i,cube;
+    for(i=0;i<5;i++)
+    {
+            printf("enter value=");
+            scanf("%d",&a[i]);
+           cube= a[i]*a[i]*a[i];
+            printf("%d\n",cube);
+    }  
+}
+***************************************
+// input 2 array from user and sum of those store in arr3
+#include <stdio.h>
+
+void main() {
+    int arr1[3], arr2[3], arr3[3], i;
+    printf("Enter elements for arr1:\n");
+    
+    for (i = 0; i < 3; i++) {
+        scanf("%d", &arr1[i]);
+    }
+ printf("Enter elements for arr2:\n");
+ for (i = 0; i < 3; i++) {
+        scanf("%d", &arr2[i]);
+    }
+
+    for (i = 0; i < 3; i++) {
+        arr3[i] = arr1[i] + arr2[i];
+    }
+    
+    printf("Sum of two arrays: ");
+    for (i = 0; i < 3; i++) { 
+        printf("%d ", arr3[i]);
+    }
+}
+****************************************
+// input 2 array from user and multiplication of those store in arr3
+#include <stdio.h>
+
+void main() {
+    int arr1[3], arr2[3], arr3[3], i;
+    printf("Enter elements for arr1:\n");
+    
+    for (i = 0; i < 3; i++) {
+        scanf("%d", &arr1[i]);
+    }
+ printf("Enter elements for arr2:\n");
+ for (i = 0; i < 3; i++) {
+        scanf("%d", &arr2[i]);
+    }
+
+    for (i = 0; i < 3; i++) {
+        arr3[i] = arr1[i] * arr2[i];
+    }
+    
+    printf("Sum of two arrays: ");
+    for (i = 0; i < 3; i++) { 
+        printf("%d ", arr3[i]);
+    }
+}
+
+
